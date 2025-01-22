@@ -50,9 +50,9 @@ def test_arithmetic_ops():
 
 def test_logical_ops():
     result = logical_ops(True, False)
-    assert result["and"] == False
-    assert result["or"] == True
-    assert result["not_x"] == False
+    assert result["AND"] == False
+    assert result["OR"] == True
+    assert result["xor"] == False
     print('Kimeo')
 
 def test_bitwise_ops():

@@ -121,7 +121,7 @@ def logical_ops(x, y):
     """
     results = {
     'OR': x or y,
-    'XOR': x ^ y,
+    'xor': x ^ y,
     'AND': x and y,
    
 }
