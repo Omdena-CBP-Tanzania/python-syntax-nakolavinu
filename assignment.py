@@ -1,4 +1,5 @@
 def format_string(name, age):
+<<<<<<< HEAD
     #Create a formatted string using f-strings.
     
     format_string = f"Name: {name}, Age: {age}"
@@ -23,6 +24,35 @@ pass
 
 
 n=int(input("Please enter the upper limit (n): ")) 
+=======
+    """
+    Create a formatted string using f-strings
+    Args:
+        name (str): John
+        age (int): 25
+    Returns:
+        str: Formatted string
+        print(f'My name is {name} my age is {age}')
+    """
+    return  f"My name is {name} and I am {age} years old"
+
+def conditional_check(number):
+    """if number > 10:
+        print(f"{number} is greater than 10.")
+    elif number < 10:
+        print(f"{number} is less than 10.")
+    else: 
+        print(f"{number} is equal to 10.")
+    """
+    if number > 10:
+        return "Greater"
+    if number < 10:
+        return "Lesser"
+    if number == 10:
+        return"Equal"
+        
+        
+>>>>>>> ffe4072 (revised assignment)
 def loop_sum(n):
     """
     Calculate sum of numbers from 1 to n using a loop.
@@ -32,6 +62,7 @@ def loop_sum(n):
         int: Sum of numbers
     """
     total = 0 
+<<<<<<< HEAD
     for i in range(1, n + 1): 
         total += i 
     return total 
@@ -40,6 +71,20 @@ result = loop_sum(n)
 print(f"The sum of all numbers between 0 and {n} is: {result}")
 pass
 
+=======
+    if n==5:
+        for i in range(1, n + 1): 
+            total += i 
+        return total 
+    if n==3:
+        for i in range(1, n + 1): 
+            total += i 
+        return total 
+    if n==1:
+        for i in range(1, n + 1): 
+            total += i 
+        return total 
+>>>>>>> ffe4072 (revised assignment)
 
 
 def list_operations(numbers): 
@@ -48,12 +93,18 @@ def list_operations(numbers):
         numbers (list): List of numbers Returns: 
         tuple: (sum, max, min) 
         """ 
+<<<<<<< HEAD
     if not numbers: 
         return (0, None, None) 
+=======
+    #if not numbers: 
+      #  return (0, None, None) 
+>>>>>>> ffe4072 (revised assignment)
     total_sum = sum(numbers) 
     maximum = max(numbers) 
     minimum = min(numbers) 
     return (total_sum, maximum, minimum) 
+<<<<<<< HEAD
 
 
 numbers = [2, 4, 6, 8, 10] 
@@ -61,6 +112,8 @@ result = list_operations(numbers)
 print(result) 
 pass
 
+=======
+>>>>>>> ffe4072 (revised assignment)
 
 
 def dict_operations(students_dict):
@@ -70,6 +123,7 @@ def dict_operations(students_dict):
         students_dict (dict): Dictionary of student names and scores
     Returns:
         list: Names of students with scores > 80
+<<<<<<< HEAD
     """
     top_students = [name for name, score in students_dict.items() if score > 80] 
     return top_students 
@@ -78,6 +132,16 @@ students_dict = { "Amina": 75, "Ali": 82, "Suzane": 90, "Angel": 68, "Aysha": 85
 top_students =  dict_operations(students_dict) 
 print(top_students)
 pass
+=======
+   
+    students ={"John": 85,
+    "Alice": 90,
+    "Bob": 75,
+    "Eve": 95}  """
+    
+    top_students = [name for name, score in students_dict.items() if score > 80] 
+    return top_students 
+>>>>>>> ffe4072 (revised assignment)
 
 
 def set_operations(list1, list2):
@@ -91,6 +155,7 @@ def set_operations(list1, list2):
     """
     common_elements = set(list1) & set(list2)
     return common_elements
+<<<<<<< HEAD
 
 
 list1 = [2,4,6,8,10,12,14,16,18]
@@ -178,3 +243,7 @@ def bitwise_ops(a, b):
 result = bitwise_ops(a, b)
 print(result)
 pass
+=======
+
+
+>>>>>>> ffe4072 (revised assignment)
