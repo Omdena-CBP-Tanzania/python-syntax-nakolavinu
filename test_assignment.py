@@ -60,7 +60,7 @@ def test_bitwise_ops():
     assert result["and"] == 8
     assert result["or"] == 14
     assert result["xor"] == 6
-   
+    print('Kimeo')
     
     test_format_string ()
     test_conditional_check()
@@ -70,4 +70,5 @@ def test_bitwise_ops():
     test_set_operations()
     test_arithmetic_ops()
     test_logical_ops()
+    test_bitwise_ops()
   

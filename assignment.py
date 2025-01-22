@@ -122,8 +122,33 @@ def logical_ops(x, y):
     results = {
     'OR': x or y,
     'XOR': x ^ y,
+    'AND': x and y,
    
 }
     return results
+
+
+def bitwise_ops(a, b):
+    """
+    Perform bitwise operations.
+    Args:
+        a (int): First integer
+        b (int): Second integer
+    Returns:
+        dict: Results of bitwise operations
+    
+    a = int(input("Please enter the first number: "))
+    b = int(input("Please enter the second number: "))"""
+    results = {
+        'AND': a & b,
+        'OR': a | b,
+        'XOR': a ^ b,
+        'NOT a': ~a,
+        'NOT b': ~b,
+        'Left shift a by b': a << b,
+        'Right shift a by b': a >> b
+    }
+    return results
+
 
 
