@@ -52,14 +52,14 @@ def test_logical_ops():
     result = logical_ops(True, False)
     assert result["AND"] == False
     assert result["OR"] == True
-    assert result["xor"] == False
+    assert result["XOR"] == False
     print('Kimeo')
 
 def test_bitwise_ops():
     result = bitwise_ops(12, 10)
-    assert result["and"] == 8
-    assert result["or"] == 14
-    assert result["xor"] == 6
+    assert result["AND"] == 8
+    assert result["OR"] == 14
+    assert result["XOR"] == 6
     print('Kimeo')
     
     test_format_string ()
