@@ -90,3 +90,40 @@ def set_operations(list1, list2):
     """
     common_elements = set(list1) & set(list2)
     return common_elements
+
+def arithmetic_ops(a, b):
+    """
+    Perform arithmetic operations.
+    Args:
+        a (float): First number
+        b (float): Second number
+    Returns:
+        dict: Results of arithmetic operations
+    """
+    #a = float(input("Please enter the first number: "))
+    #b = float(input("Please enter the second number: "))
+    results = {
+        'sum': a + b,
+        'difference': a - b,
+        'product': a * b,
+        'quotient': a/b,
+    }
+    return results
+
+def logical_ops(x, y):
+    """
+    Perform logical operations.
+    Args:
+        x (bool): First boolean
+        y (bool): Second boolean
+    Returns:
+        dict: Results of logical operations
+    """
+    results = {
+    'OR': x or y,
+    'XOR': x ^ y,
+   
+}
+    return results
+
+

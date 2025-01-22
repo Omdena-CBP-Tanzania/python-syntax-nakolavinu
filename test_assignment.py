@@ -46,12 +46,14 @@ def test_arithmetic_ops():
     assert result["difference"] == 5
     assert result["product"] == 50
     assert result["quotient"] == 2.0
+    print("My set arithmetic_ops function is working properly")
 
 def test_logical_ops():
     result = logical_ops(True, False)
     assert result["and"] == False
     assert result["or"] == True
     assert result["not_x"] == False
+    print('Kimeo')
 
 def test_bitwise_ops():
     result = bitwise_ops(12, 10)
@@ -66,4 +68,6 @@ def test_bitwise_ops():
     test_list_operations()
     test_dict_operations()
     test_set_operations()
+    test_arithmetic_ops()
+    test_logical_ops()
   
