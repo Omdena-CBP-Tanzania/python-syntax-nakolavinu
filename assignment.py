@@ -120,9 +120,10 @@ def logical_ops(x, y):
         dict: Results of logical operations
     """
     results = {
-    'OR': x or y,
-    'xor': x ^ y,
-    'AND': x and y,
+        'AND': x and y,
+        'OR': x or y,
+        'xor': x ^ y,
+    
    
 }
     return results
